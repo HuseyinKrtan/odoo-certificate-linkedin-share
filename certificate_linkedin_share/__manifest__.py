@@ -27,6 +27,7 @@ LinkedIn share action.
     'category': 'eLearning',
     'version': '19.0.1.0.0',
     'license': 'LGPL-3',
+    'images': ['static/description/banner.png'],
     'depends': ['survey'],
     'data': [
         'views/survey_certificate_linkedin.xml',
