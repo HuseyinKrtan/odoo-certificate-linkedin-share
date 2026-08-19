@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="survey_user_input_view_form_certificate_linkedin" model="ir.ui.view">
+        <field name="name">survey.user_input.view.form.certificate.linkedin</field>
+        <field name="model">survey.user_input</field>
+        <field name="inherit_id" ref="survey.survey_user_input_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='email']" position="after">
+                <field name="certificate_url" readonly="1" invisible="state != 'done'"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
